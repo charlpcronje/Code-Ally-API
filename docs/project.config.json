@@ -1,0 +1,64 @@
+{
+    // Basic project information
+    "info": {
+        "title": "My Astro Project",
+        "description": "An Astro-based web project",
+        "version": "1.0.0",
+        "author": "Charl Cronje",
+        "license": "MIT"
+    },
+
+    // Tech stack used by the project
+    "stack": [
+        "Astro",
+        "Node.js",
+        "TypeScript"
+    ],
+
+    // Relative path to the project's specification file (in markdown)
+    "spec": "./docs/spec.md",
+
+    // Relative path to the project's tasks file (if any)
+    // If you don't have a tasks file, you can create one or leave this blank
+    "tasks": "",
+
+    // Modules configuration
+    // If you don't have any structured modules, leave this empty
+    "modules": {},
+
+    // Components configuration
+    // We have components in `src/components`
+    // Since `Welcome.astro` is a component, let's index by file and consider `.astro` files as components
+    "components": {
+        "base": "./src/components/**/*.astro",
+        "index_by": "file", 
+        "file_groups": false, 
+        "file_extension": "astro",
+        "identifier": "slugify",
+        "include": [],
+        "exclude": []
+    },
+
+    // Configuration files
+    // We can consider astro.config.mjs and package.json as config files, for example
+    "config": {
+        "include": [
+            "astro.config.mjs",
+            "package.json",
+            "tsconfig.json"
+        ],
+        "exclude": [
+            "node_modules",
+            "**/*.lock"
+        ]
+    },
+
+    // Documentation configuration
+    // We have multiple doc files under `docs/`
+    "docs": {
+        "base": "./docs/**/*.md",
+        "include": [],
+        "exclude": [],
+        "identifier": "slugify"
+    }
+}

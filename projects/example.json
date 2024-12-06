@@ -1,0 +1,7 @@
+{
+    "project_path": "/var/www/html/example",
+    "docs_path": "/var/www/html/example/docs",
+    "exclude": [
+        "node_modules"
+    ]
+}
